@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel NZ </title>
-    <link rel="stylesheet" href="desktop_style.css">
+    <link rel="stylesheet" href="style.css">
 
 
 </head>
@@ -13,7 +13,7 @@
     <nav>
         
         <ul>
-            <li style="float: left;">
+            <li style="float: left; display: inline;">
                 <a href="index.html">Travel NZ</a>
             </li>
             <li>
@@ -26,7 +26,17 @@
                 <a href="contact.html">Contact</a>
             </li>
         </ul>
+        <div id="mySidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="index.html">Home</a>
+          <a href="tour.html">Tour</a>
+          <!-- <a href="#">Clients</a> -->
+          <a href="contact.html">Contact</a>
+        </div>
+        <button class="openbtn" onclick="openNav()">☰</button> 
     </nav>
+   
+    
     
    
     <div id="Hero-img"></div>
@@ -43,32 +53,42 @@
     <footer> 
         <p id="f-text">©Travel NZ</div>
        
-        <!-- Top Navigation Menu -->
-<div class="topnav">
+        <!-- Navigation Menu -->
+          <div class="pop-up-nav">
+            
+              <div id="myLinks">
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="Images/dropdown.svg" alt="">
+              </a>
+            </div>
+            
+            
+            </div>
+            
+            <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
+    </footer>
    
-    <div id="myLinks">
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
-    </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <img src="Images/dropdown.svg" alt="">
-    </a>
-  </div>
+    <script>
+  function openNav() {
+    document.getElementById("mySidepanel").style.width = "250px";
+  }
   
-  
-  </div>
-  
-  <script>
-  function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
+  function closeNav() {
+    document.getElementById("mySidepanel").style.width = "0";
   }
   </script>
-    </footer>
 </body>
 </html>

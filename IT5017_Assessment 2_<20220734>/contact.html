@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travel NZ </title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li style="float: left; display: inline;">
+                <a href="index.html">Travel NZ</a>
+            </li>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="tour.html">Tour</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+
+        <div id="mySidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="index.html">Home</a>
+          <a href="tour.html">Tour</a>
+          <!-- <a href="#">Clients</a> -->
+          <a href="contact.html">Contact</a>
+        </div>
+        <button class="openbtn" onclick="openNav()">☰</button> 
+    </nav>
+   
+
+    <div id="contact-title">
+        <h1>Contact</h1>
+    </div>
+
+
+    <div id="contact-form">
+        <form>
+            <label for="Departments">Choose a Department:</label><br>
+
+            <select id="Departments">
+            <option value="management">Management</option>
+            <option value="customersupport ">Customer Support </option>
+            <option value="one" disabled></option>
+            <option value="two" disabled></option> 
+            </select><br>
+
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email" value="JDoe@email.com"><br>
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject" value="Accessablity"><br>
+            <label for="query">Query</label><br>
+            <textarea name="message" rows="10" cols="30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem at accusantium eius! Exercitationem quod cumque, natus illum, officia magni modi debitis ad, incidunt explicabo dolorum distinctio deleniti esse eveniet.</textarea>
+            <br><br>
+            <input type="submit" value="Submit">
+
+          </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer> 
+        <p id="f-text">©Travel NZ</div>
+    
+        <!-- Navigation Menu -->
+    <div class="pop-up-nav">
+
+    <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <img src="Images/dropdown.svg" alt="">
+    </a>
+    </div>
+
+
+    </div>
+
+    <script>
+    function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+    x.style.display = "none";
+    } else {
+    x.style.display = "block";
+    }
+    }
+    </script>
+    </footer>
+    <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+        </script>
+</body>
+</html>
